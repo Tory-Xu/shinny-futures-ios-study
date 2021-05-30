@@ -306,32 +306,32 @@ class MainViewController: UIViewController, MDWebSocketUtilsDelegate, TDWebSocke
     func initTMDURLs(){
         let mdURLGroup = shuffle(group: [CommonConstants.MARKET_URL_2, CommonConstants.MARKET_URL_3, CommonConstants.MARKET_URL_4, CommonConstants.MARKET_URL_5, CommonConstants.MARKET_URL_6, CommonConstants.MARKET_URL_7])
 
-        if let myClass = objc_getClass("shinnyfutures.LocalCommonConstants"){
-            let myClassType = myClass as! NSObject.Type
-            let cl = myClassType.init()
-            let url = cl.value(forKey: "MARKET_URL_8") as! String
-            let transaction_url = cl.value(forKey: "TRANSACTION_URL") as! String
-            let json_url = cl.value(forKey: "LATEST_FILE_URL") as! String
-            CommonConstants.LATEST_FILE_URL = json_url
-            CommonConstants.TRANSACTION_URL = transaction_url
-            self.dataManager.sMdURLs.append(url)
-            let bugly_key = cl.value(forKey: "BUGLY_KEY") as! String
-            let umeng_key = cl.value(forKey: "UMENG_KEY") as! String
-            let baidu_key = cl.value(forKey: "BAIDU_KEY") as! String
-            dataManager.ak = cl.value(forKey: "AK") as! String
-            dataManager.sk = cl.value(forKey: "SK") as! String
-            #if DEBUG // 判断是否在测试环境下
-            // TODO
-            #else
-            Bugly.start(withAppId: bugly_key)
-            UMConfigure.initWithAppkey(umeng_key, channel: "AppStore")
-            let baidu = BaiduMobStat()
-            baidu.start(withAppId: baidu_key)
-            initAliLog()
-            #endif
-        }else{
-            self.dataManager.sMdURLs.append(CommonConstants.MARKET_URL_1)
-        }
+//        if let myClass = objc_getClass("shinnyfutures.LocalCommonConstants"){
+//            let myClassType = myClass as! NSObject.Type
+//            let cl = myClassType.init()
+//            let url = cl.value(forKey: "MARKET_URL_8") as! String
+//            let transaction_url = cl.value(forKey: "TRANSACTION_URL") as! String
+//            let json_url = cl.value(forKey: "LATEST_FILE_URL") as! String
+//            CommonConstants.LATEST_FILE_URL = json_url
+//            CommonConstants.TRANSACTION_URL = transaction_url
+//            self.dataManager.sMdURLs.append(url)
+//            let bugly_key = cl.value(forKey: "BUGLY_KEY") as! String
+//            let umeng_key = cl.value(forKey: "UMENG_KEY") as! String
+//            let baidu_key = cl.value(forKey: "BAIDU_KEY") as! String
+//            dataManager.ak = cl.value(forKey: "AK") as! String
+//            dataManager.sk = cl.value(forKey: "SK") as! String
+//            #if DEBUG // 判断是否在测试环境下
+//            // TODO
+//            #else
+//            Bugly.start(withAppId: bugly_key)
+//            UMConfigure.initWithAppkey(umeng_key, channel: "AppStore")
+//            let baidu = BaiduMobStat()
+//            baidu.start(withAppId: baidu_key)
+//            initAliLog()
+//            #endif
+//        }else{
+//            self.dataManager.sMdURLs.append(CommonConstants.MARKET_URL_1)
+//        }
         self.dataManager.sMdURLs += mdURLGroup
     }
 

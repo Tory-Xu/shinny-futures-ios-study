@@ -89,7 +89,6 @@
 		D47A4E852089958A00255276 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47A4E842089958A00255276 /* FileUtils.swift */; };
 		D47A4E872089BBF100255276 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47A4E862089BBF100255276 /* CommonConstants.swift */; };
 		D47F66E7215BA7110068C853 /* ResponsibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F66E6215BA7110068C853 /* ResponsibilityView.swift */; };
-		D47F66F1216B58010068C853 /* LocalCommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F66F0216B58010068C853 /* LocalCommonConstants.swift */; };
 		D480225A20688A180033E202 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480225920688A180033E202 /* AppDelegate.swift */; };
 		D480225C20688A180033E202 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D480225B20688A180033E202 /* QuoteViewController.swift */; };
 		D480225F20688A180033E202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D480225D20688A180033E202 /* Main.storyboard */; };
@@ -1255,7 +1254,7 @@
 				TargetAttributes = {
 					D480225520688A180033E202 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					D480226920688A180033E202 = {
 						CreatedOnToolsVersion = 9.2;
@@ -1718,7 +1717,6 @@
 				D4418167221AADB800458C1F /* MyBarChartRenderer.swift in Sources */,
 				D420B2DD20E091300045B6AF /* CurrentDayCombinedChartView.swift in Sources */,
 				D4EB2339226815E5002DB7D7 /* SwiftTryCatch.m in Sources */,
-				D47F66F1216B58010068C853 /* LocalCommonConstants.swift in Sources */,
 				D45DCA3E2241E06300596084 /* AMPConstants.m in Sources */,
 				D4F48C3A2213BF7200FD2143 /* AddDurationCollectionViewController.swift in Sources */,
 				D4B2345B21DDAFD20073498C /* BrokerTableViewCell.swift in Sources */,
@@ -2095,10 +2093,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = ETY2JG84H2;
+				DEVELOPMENT_TEAM = LD8P5X33TJ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2115,10 +2113,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shinnytech.zhongqihuo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinnytech.zhongqihuo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = zhongqihuo2019;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/shinnyfutures/shinnyfutures-Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.0;
@@ -2134,10 +2132,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = ETY2JG84H2;
+				DEVELOPMENT_TEAM = LD8P5X33TJ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2156,10 +2154,10 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shinnytech.zhongqihuo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinnytech.zhongqihuo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = zhongqihuo2019;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/shinnyfutures/shinnyfutures-Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.0;
